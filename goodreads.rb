@@ -49,7 +49,7 @@ class GoodReads
     }.each do |group|
       average_score = group.inject(0) { |sum, el| sum + el[:rating].to_i }.to_f / group.size
       rating_count  = group.size
-      puts "#{group[0][:book][:title]} - #{group[0][:book][:title]}: #{rating_count} ratings, #{average_score} avg score"
+      puts "#{group[0][:book][:title]} - #{group[0][:book][:author]}: #{rating_count} ratings, #{average_score} avg score"
     end
 
     binding.pry
