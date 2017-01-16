@@ -52,7 +52,6 @@ class GoodReads
       puts "#{group[0][:book][:title]} - #{group[0][:book][:author]}: #{rating_count} ratings, #{average_score} avg score"
     end
 
-    binding.pry
   end
 
   def recreate_connections(oauth: true)
